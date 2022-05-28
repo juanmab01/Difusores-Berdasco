@@ -224,6 +224,23 @@ h6 {
     margin: auto;    
 }
 
+.descripcion {
+    display: flex;
+    background-image: linear-gradient(to right, rgb(131, 253, 147), rgb(63, 66, 228));
+}
+.scrollText {
+    display: flex;
+    background-image: linear-gradient(to right, rgb(131, 253, 147), rgb(63, 66, 228));
+}
+
+.parrafoCentrado{
+    display: flex;
+    background-image: linear-gradient(to right, rgb(131, 253, 147), rgb(63, 66, 228));
+}
+
+
+
+
 /* ============================================================================================================*/
 /*                                    Elementos footer                                                         */
 
