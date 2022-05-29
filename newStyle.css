@@ -21,8 +21,8 @@ section {
 #header{
     display: flex;
     flex-wrap: wrap;
-    background-color: #63d471;
-    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
     
     position:sticky;
     top:0px;
@@ -78,6 +78,7 @@ main{
     justify-content: center;
     padding: 0px 5%;
 }
+
 
 
 .parrafoCentrado {
@@ -226,12 +227,21 @@ h6 {
     margin: auto;    
 }
 
-.img--tipoProductos {
-    transform: scale3d(1s);
+
+/*=============================================================================================================*/
+/*                                         animaciones                                                         */
+
+.tipo:hover{
+    transform: scale(1.1);
+    
+    
 }
-.img--tipoProductos:hover{
-    transition: all 1 ;
+
+.tipo{
+    transition: all 2s;
 }
+
+
 
 /* ============================================================================================================*/
 /*                                    Elementos footer                                                         */
@@ -241,8 +251,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-size: x-large;
-    background-color: #63d471;
-    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
     padding: 1% 0 1% 0;
 }
 
