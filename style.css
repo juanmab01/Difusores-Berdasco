@@ -1,6 +1,8 @@
-/* ============================================================================================================*/
-/*                                        Definiciones Generales                                               */ 
+/* ==========================================================================================================*/
+/*                       Definiciones Generales  (todas las paginas)                                         */ 
+/* ==========================================================================================================*/
 
+/* --------------------------------------------- Genericas --------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -11,20 +13,6 @@ body{
     font-weight: 500;
     /* usar 300 - 500 - 700  por defecto 500 para todo el sitio, 300 para textos voluminosos, 700 para resaltados ej. h3*/
 }
-
-section {
-    padding: 10px 0px;
-    min-width: 100%;
-}
-
-
-.card{
-    margin: 0% 10% 0% 10%;
-}
-
-
-/* ========================== Main ==========================*/
-/*   aplica a: index y contacto                              */
 
 main{   
     display: flex;
@@ -41,138 +29,51 @@ main{
     padding: 60px 5% 0px; 
 }
 
-.parrafoCentrado {
-    font-weight: 300;
-       
-    color:black;
-    /*un minimo de blanco abajo para que se vean mejor las letras */
-    background-color: rgba(255, 255, 255, 0.1);
-    
+section {
+    padding: 10px 0px;
+    min-width: 100%;
 }
 
-.tipoProductos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+h2 {
+    color:brown;
+    text-align: center;
+    padding: 20px 0px;
 }
-
-.tipo{
-    display: flex;
-    flex-direction: column;
-    width: 35%; 
+h5 {
+    font-size: x-large;
+}
+h6 {
+    font-size: medium;
 }
 
 
-.img--tipoProductos {
-    width: 100%;
-    border-radius: 5%;
-}
-
-
-@media screen and (max-width:480px){
-    /* el parrafo optativo lo sacamos cuando vamos a un telefono */
-    .parrafoOptativo{
-        display: none;
-    }
-
-    /* tipos de producto en formato vertical en un celular */
-    .tipoProductos{
-        align-items: center;
-        flex-direction: column;
-    }
-    .tipo{
-        width: 90%;
-        padding: 5% 0 0 0;
-    }
-}
-
-/*========================================================================================*/
-/*                                     Main Tienda - formato grilla                       */
-.tituloDifusores{
-    grid-area: g_tituloDifusores;
-}
-
-.difusor1{
-    grid-area: g_difusor1 
-}
-
-.difusor2{
-    grid-area: g_difusor2 
-}
-.difusor3{
-    grid-area: g_difusor3 
-}
-
-.tituloAceites{
-    grid-area: g_tituloAceites;
-}
-.aceite1{
-    grid-area: g_aceite1;
-}
-.aceite2{
-    grid-area: g_aceite2;
-}
-.aceite3{
-    grid-area: g_aceite3;
-}
-
-.grillaDifusoresYAceites{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 4fr 1fr 4fr;
-    grid-template-areas:
-    "g_tituloDifusores g_tituloDifusores g_tituloDifusores"
-    "g_difusor1 g_difusor2 g_difusor3"
-    "g_tituloAceites g_tituloAceites g_tituloAceites"
-    "g_aceite1 g_aceite2 g_aceite3"
-     ;
-     grid-column-gap:10%;
-     flex-wrap: wrap;
-    justify-items: center;
-     
-
-
-}
-
-@media screen and (max-width:480px){
-    .grillaDifusoresYAceites{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr 4fr 4fr 1fr 4fr 4fr 4fr;
-        grid-template-areas:
-        "g_tituloDifusores"
-        "g_difusor1"
-        "g_difusor2" 
-        "g_difusor3"
-        "g_tituloAceites"
-        "g_aceite1"
-        "g_aceite2" 
-        "g_aceite3";
-    }
-}
-
-
-
-.imagen{
-    width: 100%;
-    border-radius: 5%;
-}
-
-
-
-/* ======================  Header : Logo + Nav ======================= */
+/* ----------------------------------------- Header : Logo + Nav --------------------------------------------*/
 .header__look{
-    background-color: #aff6cf;
     background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
     margin: 0;
     padding: 0 10px 0 10px;
+}
+
+.submenu__look{
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #ade8d3 0%, #aad7d7 75%);
+    padding: 0;
+    border: 0px;
+}
+
+.submenu__item{
+    color: brown;
+}
+.submenu__item:hover{
+    color: white;
+    background-color: hsl(147, 80%, 83%, 10%);
 }
 
 .nav__color{
     color: brown;
     font-size: 20px;
 }
-.nav__color:hover{
+.nav_color:hover, .nav_color:focus{
     color:rgba(255, 255, 255)
 }
 
@@ -193,57 +94,8 @@ main{
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(165, 42, 42, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* ============================================================================================================*/
-/*                                    Elementos generales                                                      */
 
-h2 {
-    color:brown;
-    text-align: center;
-    padding: 20px 0px;
-}
-
-h5 {
-    font-size: x-large;
-}
-h6 {
-    font-size: medium;
-}
-
-.elementoIncrustadoCentrado{
-    display: flex;
-
-    border: black;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
-
-.scrollText{ 
-    width: 90%;
-    height: 350px;
-    overflow: auto;
-    margin: auto;    
-}
-
-
-/*=============================================================================================================*/
-/*                                         animaciones                                                         */
-
-.tipo:hover{
-    transform: scale(1.1);
-    
-    
-}
-
-.tipo{
-    transition: all 2s;
-}
-
-
-
-/* ============================================================================================================*/
-/*                                    Elementos footer                                                         */
-
+/* ---------------------------------------------    Footer     --------------------------------------------*/
 footer {
     display: flex;
     justify-content: space-around;
@@ -251,36 +103,198 @@ footer {
     font-size: x-large;
     background-color: #aff6cf;
     background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
-    padding: 1% 0 1% 0;
+    padding: .5% 20% 1% 20%;
 }
 
-i{ font-size: 20px;
+.footerText{
+    margin: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    vertical-align: center;
     color: brown;
-    
+    text-align: center;
 }
+
 i:hover{
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
-/* ================================================================================================================*/
-/*                                           Form Contacto                                                         */       
-.contactos{
-    border: rgb(247, 0, 0);
-    width: 98%;   
+
+/* ==========================================================================================================*/
+/*                                           Definiciones Index                                              */ 
+/* ==========================================================================================================*/
+
+.parrafoCentrado {
+    font-weight: 300;       
+    color:black;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*un minimo de blanco abajo para que se vean mejor las letras */
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
+.my-card-carousel{
+    margin: 0% 10% 10% 10%;
+}
+
+
+/* Index: Nuestros productos */
+.tipoProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tipo{
+    display: flex;
+    flex-direction: column;
+    width: 35%; 
+}
+
+
+.img--tipoProductos {
+    width: 100%;
+    border-radius: 5%;
+}
+
+/* Animacion nuestros productos*/
+.tipo:hover{
+    transform: scale(1.1);
+}
+
+.tipo{ 
+    transition: all 1.5s;
+}
+
+.elementoIncrustadoCentrado{    
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 50rem;
+    height: 30rem;
+}
+
+@media screen and (max-width:480px){
+    /* el parrafo optativo lo sacamos cuando vamos a un celular */
+    .parrafoOptativo{
+        display: none;
+    }
+
+    /* tipos de producto en formato vertical en un celular */
+    .tipoProductos{
+        align-items: center;
+        flex-direction: column;
+    }
+    .tipo{
+        width: 90%;
+        padding: 5% 0 0 0;
+    }
+}
+
+@media screen and (max-width:800px){
+    .video{
+        border: 3px solid #9f98e8;
+        width: 380px;
+        height: 380px;
+    }
+}
+
+/* ==========================================================================================================*/
+/*                                          Definiciones Tiennda                                             */ 
+/* ==========================================================================================================*/
+
+.my-cards{
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.difusor,.aceite{
+    margin-bottom: 5%;
+}
+.my-card-body{
+    padding: 0;
+}
+
+.my-card-title{
+    font-size: 1.3rem;
+}
+
+.my-card-imagen{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.sameLineJustify{
+    display: flex;
+    justify-content: space-between;
+}
+.my-card-text{
+    font-size: 1.2rem;
+    margin-bottom: .2rem;   
+}
+.my-card-button {
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+    border-radius: .5rem;
+    border: 0;
+    margin-bottom: .3rem;
+}
+
+
+/* ==========================================================================================================*/
+/*                                          Definiciones Contacto                                             */ 
+/* ==========================================================================================================*/
+
 .contacto {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    padding: 0 20% 0 20%;
 }
 
-.mapa {
-    margin: 0%;
-    padding: 0%;
+.form__contacto{
+    width: 100%;   
+    text-align: center;
+    border: 2px solid #9f98e8;
+    background-color: #aff6cf8f;
 }
 
-.mapaa{
-  text-align: center;
+.color_button_contacto{
+    background-color:  #9f98e8;
 }
 
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #9f98e8;
+    border: none;
+    color: white;
+    padding: 6px 36px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+
+.bloquesUbicacion{
+    width: 50rem;
+    height: 600px;
+}
+
+.scrollText{ 
+    width: 90%;
+    height: 350px;
+    overflow: auto;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid #9f98e8;
+    background-color: #aff6cf8f;
+}
+
+@media screen and (max-width:480px){
+    .contacto {
+        padding: 0 5% 0 5%;
+    }
+}
