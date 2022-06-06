@@ -217,6 +217,8 @@ i:hover{
 }
 .my-card-body{
     padding: 0;
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
 }
 
 .my-card-title{
@@ -225,7 +227,8 @@ i:hover{
 
 .my-card-imagen{
     width: 100%;
-    border-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
 .sameLineJustify{
@@ -237,7 +240,7 @@ i:hover{
     margin-bottom: .2rem;   
 }
 .my-card-button {
-    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+    background-color: black;
     border-radius: .5rem;
     border: 0;
     margin-bottom: .3rem;
@@ -258,16 +261,16 @@ i:hover{
 
 .form__contacto{
     width: 100%;   
-    text-align: center;
+    text-align: left;
     border: 2px solid #9f98e8;
     background-color: #aff6cf8f;
 }
 
-.color_button_contacto{
-    background-color:  #9f98e8;
+.form__bottoms{
+    text-align: center;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=submit], input[type=reset] {
     background-color: #9f98e8;
     border: none;
     color: white;
@@ -277,6 +280,9 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
   }
   
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: black;
+}
 
 .bloquesUbicacion{
     width: 50rem;
