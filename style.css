@@ -29,6 +29,13 @@ main{
     padding: 60px 5% 0px; 
 }
 
+@media screen and (max-width:480px) {
+    main{
+    padding: 75px 5% 0;
+}
+}
+
+
 section {
     padding: 10px 0px;
     min-width: 100%;
