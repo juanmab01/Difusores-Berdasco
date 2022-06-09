@@ -1,0 +1,55 @@
+/* ==========================================================================================================*/
+/*                                          Definiciones Contacto                                             */ 
+/* ==========================================================================================================*/
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    @media screen and (max-width:480px){
+            padding: 0 5% 0 5%;
+    }
+}
+
+.form__contacto{
+    width: 100%;   
+    text-align: left;
+    border: 2px solid #9f98e8;
+    background-color: #aff6cf8f;
+}
+
+.form__bottoms{
+    text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #9f98e8;
+    border: none;
+    color: white;
+    padding: 6px 36px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: black;
+}
+
+.bloquesUbicacion{
+    width: 50rem;
+    height: 600px;
+}
+
+.scrollText{ 
+    width: 90%;
+    height: 350px;
+    overflow: auto;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid #9f98e8;
+    background-color: #aff6cf8f;
+}
+

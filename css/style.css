@@ -1,0 +1,293 @@
+/* ==========================================================================================================*/
+/*                       Definiciones Generales  (todas las paginas)                                         */
+/* ==========================================================================================================*/
+/* --------------------------------------------- Genericas --------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  /* usar 300 - 500 - 700  por defecto 500 para todo el sitio, 300 para textos voluminosos, 700 para resaltados ej. h3*/
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../imagenes/campoLight.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 5% 0px;
+}
+main section {
+  padding: 10px 0px;
+  min-width: 100%;
+}
+@media screen and (max-width: 480px) {
+  main {
+    padding: 75px 5% 0;
+  }
+}
+
+h2 {
+  color: brown;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+h5 {
+  font-size: x-large;
+}
+
+h6 {
+  font-size: medium;
+}
+
+/* ----------------------------------------- Header : Logo + Nav --------------------------------------------*/
+.header__look {
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+  margin: 0;
+  padding: 0 10px 0 10px;
+}
+
+.submenu__look {
+  background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #ade8d3 0%, #aad7d7 75%);
+  padding: 0;
+  border: 0px;
+}
+
+.submenu__item {
+  color: brown;
+}
+.submenu__item:hover {
+  color: white;
+  background-color: hsla(147deg, 80%, 83%, 0.1);
+}
+
+.nav__color {
+  color: brown;
+  font-size: 20px;
+}
+.nav__color:hover, .nav__color:focus {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Al cambiar el color (sin usar fg-light, etc) la hamburguesa deja de verse.
+   Consultado en internet (geeksforgeeks.org y otros) se recomienda modificar las siguientes 2 clases
+   la primera cambia el color del borde de la hamburguesa y la segunda -en el campo stroke- las lineas de corte */
+.toggler__color.navbar-toggler {
+  border-color: rgb(165, 42, 42);
+  margin-right: 20px;
+}
+
+.toggler__color .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(165, 42, 42, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ---------------------------------------------    Footer     --------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+  background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+  padding: 0.5% 20% 1% 20%;
+}
+footer .footerText {
+  margin: 0;
+  font-size: 15px;
+  padding-top: 10px;
+  vertical-align: center;
+  color: brown;
+  text-align: center;
+}
+footer i:hover {
+  font-size: 18px;
+  color: black;
+}
+
+/* ==========================================================================================================*/
+/*                                           Definiciones Index                                              */
+/* ==========================================================================================================*/
+.parrafoCentrado {
+  font-weight: 300;
+  color: black;
+  margin-left: 15%;
+  margin-right: 15%;
+  /*un minimo de blanco abajo para que se vean mejor las letras */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.my-card-carousel {
+  margin: 0% 10% 10% 10%;
+}
+
+/* Index: Nuestros productos */
+.tipoProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tipoProductos .tipo {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  /* Animacion nuestros productos*/
+  transition: all 1.5s;
+}
+.tipoProductos .tipo:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 480px) {
+  .tipoProductos .tipo {
+    width: 90%;
+    padding: 5% 0 0 0;
+  }
+}
+.tipoProductos .img--tipoProductos {
+  width: 100%;
+  border-radius: 5%;
+}
+@media screen and (max-width: 480px) {
+  .tipoProductos {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.elementoIncrustadoCentrado {
+  display: flex;
+  justify-content: center;
+}
+.elementoIncrustadoCentrado .video {
+  width: 50rem;
+  height: 30rem;
+}
+@media screen and (max-width: 800px) {
+  .elementoIncrustadoCentrado .video {
+    border: 3px solid #9f98e8;
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* el parrafo optativo lo sacamos cuando vamos a un celular */
+  .parrafoOptativo {
+    display: none;
+  }
+}
+/* ==========================================================================================================*/
+/*                                          Definiciones Tiennda                                             */
+/* ==========================================================================================================*/
+.difusor, .aceite {
+  margin-bottom: 5%;
+}
+
+.my-cards {
+  padding: 0;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.my-card-body {
+  padding: 0;
+  background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+}
+
+.my-card-title {
+  font-size: 1.3rem;
+}
+
+.my-card-imagen {
+  width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.sameLineJustify {
+  display: flex;
+  justify-content: space-between;
+}
+.sameLineJustify .my-card-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+.sameLineJustify .my-card-button {
+  background-color: black;
+  border-radius: 0.5rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+/* ==========================================================================================================*/
+/*                                          Definiciones Contacto                                             */
+/* ==========================================================================================================*/
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20% 0 20%;
+}
+@media screen and (max-width: 480px) {
+  .contacto {
+    padding: 0 5% 0 5%;
+  }
+}
+
+.form__contacto {
+  width: 100%;
+  text-align: left;
+  border: 2px solid #9f98e8;
+  background-color: rgba(175, 246, 207, 0.5607843137);
+}
+
+.form__bottoms {
+  text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #9f98e8;
+  border: none;
+  color: white;
+  padding: 6px 36px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: black;
+}
+
+.bloquesUbicacion {
+  width: 50rem;
+  height: 600px;
+}
+
+.scrollText {
+  width: 90%;
+  height: 350px;
+  overflow: auto;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid #9f98e8;
+  background-color: rgba(175, 246, 207, 0.5607843137);
+}
+
+/*# sourceMappingURL=style.css.map */

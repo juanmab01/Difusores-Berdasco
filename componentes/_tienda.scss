@@ -1,0 +1,44 @@
+/* ==========================================================================================================*/
+/*                                          Definiciones Tiennda                                             */ 
+/* ==========================================================================================================*/
+
+
+
+.difusor,.aceite{
+    margin-bottom: 5%;
+}
+.my-cards{
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.my-card-body{
+    padding: 0;
+    background-color: #aff6cf;
+    background-image: $gradiente;
+}
+
+.my-card-title{
+    font-size: 1.3rem;
+}
+
+.my-card-imagen{
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.sameLineJustify{
+    display: flex;
+    justify-content: space-between;
+    .my-card-text{
+        font-size: 1.2rem;
+        margin-bottom: .2rem;   
+    }
+    .my-card-button {
+        background-color: black;
+        border-radius: .5rem;
+        border: 0;
+        margin-bottom: .3rem;
+    }
+}

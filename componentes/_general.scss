@@ -1,0 +1,120 @@
+/* ==========================================================================================================*/
+/*                       Definiciones Generales  (todas las paginas)                                         */ 
+/* ==========================================================================================================*/
+
+/* --------------------------------------------- Genericas --------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    /* usar 300 - 500 - 700  por defecto 500 para todo el sitio, 300 para textos voluminosos, 700 para resaltados ej. h3*/
+   
+}
+main{   
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url(../imagenes/campoLight.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    align-items: center;
+    justify-content: center;
+    padding: 60px 5% 0px; 
+    section {
+        padding: 10px 0px;
+        min-width: 100%;
+    }
+    @media screen and (max-width:480px) {        
+        padding: 75px 5% 0;
+    }
+}
+h2 {
+    color:$colortitulos;
+    text-align: center;
+    padding: 20px 0px;
+}
+h5 {
+    font-size: x-large;
+}
+h6 {
+    font-size: medium;
+}
+
+/* ----------------------------------------- Header : Logo + Nav --------------------------------------------*/
+.header__look{
+    background-image:$gradiente;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+.submenu__look{
+    background-color: #aff6cf;
+    background-image: $gradienteParcial;
+    padding: 0;
+    border: 0px;
+}
+
+.submenu__item{
+    color: $colortitulos;
+    &:hover{
+        color: white;
+        background-color: hsl(147, 80%, 83%, 10%);
+    }
+}
+
+
+.nav__color{
+    color: $colortitulos;
+    font-size: 20px;
+    &:hover, &:focus{
+        color:rgba(255, 255, 255)
+    }
+}
+
+
+.navbar-nav li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Al cambiar el color (sin usar fg-light, etc) la hamburguesa deja de verse.
+   Consultado en internet (geeksforgeeks.org y otros) se recomienda modificar las siguientes 2 clases
+   la primera cambia el color del borde de la hamburguesa y la segunda -en el campo stroke- las lineas de corte */
+.toggler__color.navbar-toggler {  
+    border-color: rgb(165, 42, 42);
+    margin-right: 20px;
+} 
+.toggler__color .navbar-toggler-icon {  
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(165, 42, 42, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ---------------------------------------------    Footer     --------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+    background-color: #aff6cf;
+    background-image: $gradiente;
+    padding: .5% 20% 1% 20%;
+    .footerText{
+        margin: 0;
+        font-size: 15px;
+        padding-top: 10px;
+        vertical-align: center;
+        color: $colortitulos;
+        text-align: center;
+    }
+    i:hover{
+        font-size: 18px;
+        color: black;
+    }
+}

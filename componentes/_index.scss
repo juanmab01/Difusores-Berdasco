@@ -1,0 +1,73 @@
+/* ==========================================================================================================*/
+/*                                           Definiciones Index                                              */ 
+/* ==========================================================================================================*/
+
+.parrafoCentrado {
+    font-weight: 300;       
+    color:black;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*un minimo de blanco abajo para que se vean mejor las letras */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.my-card-carousel{
+    margin: 0% 10% 10% 10%;
+}
+
+
+/* Index: Nuestros productos */
+.tipoProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .tipo{
+        display: flex;
+        flex-direction: column;
+        width: 35%; 
+        /* Animacion nuestros productos*/
+        transition: all 1.5s;
+        &:hover{
+        transform: scale(1.1);
+        }
+        @media screen and (max-width:480px){
+            width: 90%;
+            padding: 5% 0 0 0; 
+        }
+
+    }
+    .img--tipoProductos {
+        width: 100%;
+        border-radius: 5%;
+    }
+    @media screen and (max-width:480px){
+        align-items: center;
+        flex-direction: column;
+    }
+        
+
+}
+
+.elementoIncrustadoCentrado{    
+    display: flex;
+    justify-content: center;
+    .video{
+        width: 50rem;
+        height: 30rem;
+        @media screen and (max-width:800px){       
+            border: 3px solid #9f98e8;
+            width: 380px;
+            height: 380px;       
+        }
+    }
+}
+
+
+
+@media screen and (max-width:480px){
+    /* el parrafo optativo lo sacamos cuando vamos a un celular */
+    .parrafoOptativo{
+        display: none;
+    }
+
+}
