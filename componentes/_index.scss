@@ -11,6 +11,13 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.parrafoOptativo{
+    @extend .parrafoCentrado;
+    @media screen and (max-width:480px){
+        display: none;
+    }
+}
+
 .my-card-carousel{
     margin: 0% 10% 10% 10%;
 }
@@ -49,8 +56,8 @@
 }
 
 .elementoIncrustadoCentrado{    
-    display: flex;
-    justify-content: center;
+    display: map-get($flex , tipo );
+    justify-content: map-get($flex , justificado );
     .video{
         width: 50rem;
         height: 30rem;
@@ -64,10 +71,3 @@
 
 
 
-@media screen and (max-width:480px){
-    /* el parrafo optativo lo sacamos cuando vamos a un celular */
-    .parrafoOptativo{
-        display: none;
-    }
-
-}

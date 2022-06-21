@@ -35,6 +35,12 @@ main section {
   }
 }
 
+h1 {
+  color: brown;
+  text-align: center;
+  padding: 20px 0px;
+}
+
 h2 {
   color: brown;
   text-align: center;
@@ -98,7 +104,7 @@ h6 {
 
 /* ---------------------------------------------    Footer     --------------------------------------------*/
 footer {
-  display: flex;
+  display: flex;  
   justify-content: space-around;
   align-items: center;
   font-size: x-large;
@@ -122,13 +128,19 @@ footer i:hover {
 /* ==========================================================================================================*/
 /*                                           Definiciones Index                                              */
 /* ==========================================================================================================*/
-.parrafoCentrado {
+.parrafoCentrado, .parrafoOptativo {
   font-weight: 300;
   color: black;
   margin-left: 15%;
   margin-right: 15%;
   /*un minimo de blanco abajo para que se vean mejor las letras */
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+  .parrafoOptativo {
+    display: none;
+  }
 }
 
 .my-card-carousel {
@@ -184,12 +196,6 @@ footer i:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
-  /* el parrafo optativo lo sacamos cuando vamos a un celular */
-  .parrafoOptativo {
-    display: none;
-  }
-}
 /* ==========================================================================================================*/
 /*                                          Definiciones Tiennda                                             */
 /* ==========================================================================================================*/
@@ -262,8 +268,8 @@ footer i:hover {
 }
 
 input[type=submit], input[type=reset] {
-  background-color: #9f98e8;
   border: none;
+  background-color: #9f98e8;
   color: white;
   padding: 6px 36px;
   text-decoration: none;

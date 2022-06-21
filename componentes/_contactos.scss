@@ -16,8 +16,7 @@
 .form__contacto{
     width: 100%;   
     text-align: left;
-    border: 2px solid #9f98e8;
-    background-color: #aff6cf8f;
+    @include borderybackcolor (2px solid #9f98e8,  #aff6cf8f); 
 }
 
 .form__bottoms{
@@ -25,8 +24,7 @@
 }
 
 input[type=submit], input[type=reset] {
-    background-color: #9f98e8;
-    border: none;
+    @include borderybackcolor (none,  #9f98e8);
     color: white;
     padding: 6px 36px;
     text-decoration: none;
